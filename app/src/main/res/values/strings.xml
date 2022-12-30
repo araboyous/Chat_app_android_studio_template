@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Supptic_news</string>
+
+    <string name="textepublish">Visite des etudiants de sup\'ptic
+        à l\'ecole nationale supperieur polytechnique de paris lors
+        des concours du meiilleur projet en Ict.</string>
+    <string-array name="produit">
+        <item>Arabo</item>
+        <item>Youssoufa</item>
+        <item>Jhon</item>
+        <item>Dala</item>
+        <item>Fayssal</item>
+        <item>Dadda</item>
+        <item>Adda</item>
+        <item>Haoua</item>
+
+
+    </string-array>
+
+    <string-array name="description">
+        <item>Visite des etudiants de sup\'ptic
+        à l\'ecole nationale supperieur polytechnique de paris lors
+        des concours du meiilleur projet en Ict</item>
+        <item>on proceder comme suite ici</item>
+        <item>Visite des etudiants de sup\'ptic
+        à l\'ecole nationale supperieur polytechnique de paris lors
+        des concours du meiilleur projet en Ict</item>
+        <item>on proceder comme suite ici</item>
+        <item>Visite des etudiants de sup\'ptic
+        à l\'ecole nationale supperieur polytechnique de paris lors
+        des concours du meiilleur projet en Ict</item>
+        <item>on proceder comme suite ici</item>
+        <item>Visite des etudiants de sup\'ptic
+        à l\'ecole nationale supperieur polytechnique de paris lors
+        des concours du meiilleur projet en Ict</item>
+        <item>on proceder comme suite ici</item>
+
+
+    </string-array>
+</resources>
