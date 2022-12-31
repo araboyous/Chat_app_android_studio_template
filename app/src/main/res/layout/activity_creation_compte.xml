@@ -60,7 +60,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:drawableRight="@drawable/ic_baseline_visibility_24"
                 android:hint=" @gmail.com" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,6 +76,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true"
             android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -97,6 +97,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_height="match_parent">
 

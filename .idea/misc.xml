@@ -9,6 +9,11 @@
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Supptic_news/app/src/main/res/layout/activity_creation_compte.xml" value="0.18125" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Supptic_news/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Supptic_news/app/src/main/res/layout/publish.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Desktop/Test_de_transfert/app/src/main/res/layout/activity_acceuil.xml" value="0.2" />
+        <entry key="..\:/Users/Dell/Desktop/Test_de_transfert/app/src/main/res/layout/activity_creation_compte.xml" value="0.2" />
+        <entry key="..\:/Users/Dell/Desktop/Test_de_transfert/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/Desktop/Test_de_transfert/app/src/main/res/layout/activity_modifier_compte.xml" value="0.2" />
+        <entry key="..\:/Users/Dell/Desktop/Test_de_transfert/app/src/main/res/layout/publish.xml" value="0.2" />
       </map>
     </option>
   </component>
@@ -17,5 +22,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>

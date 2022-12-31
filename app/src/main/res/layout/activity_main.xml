@@ -55,13 +55,13 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true"
             android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:drawableRight="@drawable/ic_baseline_visibility_24"
                 android:hint="Entrer votre mot de pass" />
         </com.google.android.material.textfield.TextInputLayout>
         <Button

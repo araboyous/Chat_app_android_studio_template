@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Supptic_news"
         tools:targetApi="31">
         <activity
+            android:name=".Modifier_compte"
+            android:exported="false" />
+        <activity
             android:name=".Acceuil"
             android:exported="false" />
         <activity

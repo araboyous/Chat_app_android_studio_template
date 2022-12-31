@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Modifier_compte">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-black">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:clickable="true"
+            android:layout_gravity="end"
+            android:layout_marginLeft="200dp"
+           android:textColor="@color/rouge"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-black">
+
+        </TextView>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="3dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Creer Compte"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorapp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pseudo"></TextView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Entrer votre nom" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorapp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email"></TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint=" @gmail.com" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorapp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password"></TextView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:passwordToggleEnabled="true"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Entrer votre mot de pass" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorapp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmer le mot de pass"></TextView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:passwordToggleEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Entrer le mot de pass" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/create"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:text="Enregistrer"
+                    android:backgroundTint="@color/colorapp"
+                    android:gravity="center">
+
+                </Button>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>
