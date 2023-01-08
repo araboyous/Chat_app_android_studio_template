@@ -9,7 +9,7 @@ import android.os.Bundle;
 public class Acceuil extends AppCompatActivity {
     RecyclerView recyclerview;
     String s1[], s2[];
-    int images[] = {R.drawable.students, R.drawable.logo,
+    int images[] = {R.drawable.students, R.drawable.mark,
             R.drawable.students, R.drawable.logo, R.drawable.students,
             R.drawable.logo, R.drawable.students, R.drawable.logo};
 
