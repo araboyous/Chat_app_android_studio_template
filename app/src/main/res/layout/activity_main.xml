@@ -83,15 +83,46 @@
             android:textColor="@color/colorapp"
             android:textStyle="bold"
             ></TextView>
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_height="wrap_content"
-            android:text="Ou"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            />
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="start"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="26dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:text="Ou"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="end"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"

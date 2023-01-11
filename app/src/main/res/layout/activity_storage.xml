@@ -4,14 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Acceuil">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fuwer"
-        android:layout_width="match_parent"
+    tools:context=".Storage">
 
-        android:layout_height="match_parent">
-
-    </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
@@ -27,7 +21,5 @@
         app:itemIconSize="35dp"
         app:itemIconTint="@color/colorapp"
         app:labelVisibilityMode="unlabeled"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

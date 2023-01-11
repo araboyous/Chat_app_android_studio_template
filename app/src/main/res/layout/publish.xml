@@ -8,7 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:orientation="vertical">
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -16,11 +15,12 @@
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:clickable="true"
-            app:cardCornerRadius="15dp"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:orientation="vertical">
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -28,12 +28,13 @@
 
                     <ImageView
                         android:id="@+id/imdepub"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginEnd="332dp"
-                        android:background="@drawable/logo"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="250dp"
+                        android:background="@drawable/simpost"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.262"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
@@ -41,29 +42,28 @@
                         android:id="@+id/nompub"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="247dp"
-                        android:layout_marginBottom="23dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="192dp"
+                        android:layout_marginBottom="18dp"
                         android:text="Jhon doe"
-                        android:textSize="20dp"
+                        android:textSize="15dp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toRightOf="@id/imdepub"
-                        app:layout_constraintTop_toTopOf="parent"></TextView>
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.277"></TextView>
 
                     <TextView
                         android:id="@+id/heurpub"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_marginEnd="296dp"
+                        android:layout_marginLeft="28dp"
                         android:inputType="number"
                         android:text="2h"
+                        android:textSize="15dp"
                         app:layout_constraintBottom_toBottomOf="@+id/nompub"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toRightOf="@id/imdepub"
-                        app:layout_constraintTop_toBottomOf="@+id/imdepub">
+                        app:layout_constraintLeft_toRightOf="@id/imdepub">
 
                     </TextView>
 
@@ -75,6 +75,7 @@
                         android:layout_marginEnd="60dp"
                         android:layout_marginBottom="31dp"
                         android:text="1 min de lecture"
+                        android:textSize="11dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/nompub"
@@ -83,8 +84,8 @@
                     </TextView>
 
                     <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="26dp"
                         android:background="@drawable/morehoriz"
@@ -101,35 +102,39 @@
                 <TextView
                     android:id="@+id/affiche"
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/textepublish"></TextView>
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/textepublish"
+                    android:textColor="@color/black"></TextView>
+
                 <ImageView
                     android:id="@+id/iamy"
-                    android:layout_width="match_parent"
-                    android:scaleType="centerCrop"
+                    android:layout_width="330dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/students"></ImageView>
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_marginBottom="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_height="match_parent">
 
+
                     <TextView
                         android:id="@+id/lireplus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="280dp"
+                        android:layout_marginEnd="220dp"
                         android:text="Lire plus > "
                         android:textColor="@color/colorapp"
-                        android:textSize="15dp"
+                        android:textSize="12dp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.307"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"></TextView>
 
@@ -137,45 +142,45 @@
                         android:id="@+id/mespub"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="230dp"
-                        android:text="  01"
-                        android:drawableStart="@drawable/messagepublish"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="176dp"
+                        android:drawableStart="@drawable/messagepublish"
+                        android:text="  01"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toRightOf="@id/lireplus"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0">
 
 
                     </TextView>
-
-
-
 
                     <TextView
                         android:id="@+id/savepub"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginEnd="170dp"
+                        android:layout_marginEnd="140dp"
                         android:drawableStart="@drawable/mark"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/mespub"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
 
                     </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="40dp"
-                        android:text="partager    "
+                        android:layout_marginEnd="24dp"
                         android:drawableRight="@drawable/sharepublish"
+                        android:text="partager    "
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/savepub"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
 
                     </TextView>
 
