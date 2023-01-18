@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".creation_compte">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:orientation="vertical">
@@ -20,7 +19,7 @@
             android:textStyle="bold"
             android:textSize="25dp"
             android:fontFamily="sans-serif-black"
-            android:text="Se connecter"></TextView>
+            android:text="Creer Compte"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_marginTop="20dp"
@@ -38,10 +37,32 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:id="@+id/mailconnect"
+                android:id="@+id/pseudo1"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Entrer votre nom" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorapp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="Email"></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/Email1"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="Entrer votre mail" />
+                android:hint=" @gmail.com" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -53,6 +74,7 @@
             android:layout_height="wrap_content"
             android:text="Password"></TextView>
 
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -61,17 +83,43 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:id="@+id/motconnect"
+                android:id="@+id/password1"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="textPersonName"
                 android:hint="Entrer votre mot de pass" />
         </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorapp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="Confirmer le mot de pass"></TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/conf_password"
+                android:inputType="textPersonName"
+                android:hint="Entrer le mot de pass" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
         <Button
-            android:id="@+id/connect"
+            android:id="@+id/button_creation"
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
+            android:textAllCaps="false"
             android:layout_height="wrap_content"
-            android:text="se connecter"
+            android:text="Créer compte"
             android:backgroundTint="@color/colorapp"
             android:gravity="center">
 
@@ -79,55 +127,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/passforget"
             android:text="Mot de pass oublié ?"
             android:layout_marginTop="10dp"
             android:layout_gravity="end"
             android:textColor="@color/colorapp"
             android:textStyle="bold"
             ></TextView>
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="150dp"
-                android:layout_height="1dp"
-                android:layout_gravity="start"
-                android:background="@color/black" />
-
-            <TextView
-                android:layout_width="26dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                android:gravity="center"
-                android:text="Ou"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <View
-                android:id="@+id/view2"
-                android:layout_width="150dp"
-                android:layout_height="1dp"
-                android:layout_gravity="end"
-                android:background="@color/black" />
-
-
-        </LinearLayout>
-
-
-
-
-
-
+            android:layout_height="wrap_content"
+            android:text="Ou"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
         <androidx.cardview.widget.CardView
-            android:id="@+id/google"
+            android:id="@+id/card"
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
             app:cardCornerRadius="5dp"
@@ -141,7 +157,6 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_gravity="start"
                     android:layout_height="35dp"
                     android:background="@drawable/logo">
 
@@ -168,19 +183,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textSize="16dp"
-                android:text="Vous n'avez pas de compte?">
+                android:text="Vous avez deja un  compte?">
 
             </TextView>
 
             <TextView
                 android:clickable="true"
-                android:id="@+id/textcreate"
+                android:id="@+id/seconnecter"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textSize="16dp"
                 android:layout_marginLeft="15dp"
                 android:textColor="@color/colorapp"
-                android:text="Créer un compte">
+                android:text="Se connecter">
 
             </TextView>
         </LinearLayout>

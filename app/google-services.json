@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "326122593274",
+    "project_id": "supptic-news-baebc",
+    "storage_bucket": "supptic-news-baebc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326122593274:android:cd9574751579ff505ba243",
+        "android_client_info": {
+          "package_name": "com.example.supptic_news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326122593274-ndmbecb6vughf3m2bm7o5btpr74dkk1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYUOfOCPUc9q8Ilwn7cXIxXiUJjQhDqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326122593274-ndmbecb6vughf3m2bm7o5btpr74dkk1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
