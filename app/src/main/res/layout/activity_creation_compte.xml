@@ -37,6 +37,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/pseudo1"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:hint="Entrer votre nom" />
@@ -58,6 +59,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/Email1"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:hint=" @gmail.com" />
@@ -81,6 +83,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/password1"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:hint="Entrer votre mot de pass" />
@@ -104,13 +107,14 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/conf_password"
                 android:inputType="textPersonName"
                 android:hint="Entrer le mot de pass" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
-            android:id="@+id/create"
+            android:id="@+id/button_creation"
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
             android:textAllCaps="false"
@@ -136,9 +140,10 @@
             android:text="Ou"
             android:gravity="center"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="15dp"
             />
         <androidx.cardview.widget.CardView
+            android:id="@+id/card"
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
             app:cardCornerRadius="5dp"
@@ -184,7 +189,7 @@
 
             <TextView
                 android:clickable="true"
-                android:id="@+id/textconnect"
+                android:id="@+id/seconnecter"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textSize="16dp"

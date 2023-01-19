@@ -1,6 +1,7 @@
 package com.example.supptic_news;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -15,6 +16,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
+import com.firebase.ui.auth.IdpResponse;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -74,10 +76,8 @@ public class Creationcomptereview extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startSignInActivity();
-                if((FirebaseAuth.getInstance().getCurrentUser())!=null){
-                    Intent in =new Intent(getApplicationContext(),Acceuil.class);
-                    startActivity(in);
-                }
+
+
 
             }
         });
@@ -141,8 +141,8 @@ public class Creationcomptereview extends AppCompatActivity {
         // Choose authentication providers
         // Choose authentication providers
         List<AuthUI.IdpConfig> providers = Arrays.asList(
-                new AuthUI.IdpConfig.GoogleBuilder().build(),
-                new AuthUI.IdpConfig.EmailBuilder().build());
+                new AuthUI.IdpConfig.GoogleBuilder().build());
+                //new AuthUI.IdpConfig.EmailBuilder().build());
 
         // Launch the activity
 
@@ -161,7 +161,36 @@ public class Creationcomptereview extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }*/
+  @Override
+  protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+      super.onActivityResult(requestCode, resultCode, data);
+      this.handleResponseAfterSignIn(requestCode, resultCode, data);
+  }
+    private void handleResponseAfterSignIn(int requestCode, int resultCode, Intent data){
+
+        IdpResponse response = IdpResponse.fromResultIntent(data);
+
+        if (requestCode == RC_SIGN_IN) {
+            // SUCCESS
+            if (resultCode == RESULT_OK) {
+                Intent in =new Intent(getApplicationContext(),Acceuil.class);
+                Toast.makeText(getApplicationContext(),"success",Toast.LENGTH_LONG).show();
+                startActivity(in);
+            }
+            else {
+                Toast.makeText(getApplicationContext(),"Failed",Toast.LENGTH_LONG).show();
+            }
+
+            }
+        else{
+            Toast.makeText(getApplicationContext(),"RAS",Toast.LENGTH_LONG).show();
+        }
+            }
 
 
 
-}
+
+        }
+
+
+

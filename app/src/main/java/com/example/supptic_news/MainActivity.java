@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.identity.BeginSignInRequest;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInApi;
@@ -50,10 +51,12 @@ public class MainActivity extends AppCompatActivity {
         button1=findViewById(R.id.connect);
         firebaseAuth=FirebaseAuth.getInstance();
         progressDialog=new ProgressDialog(this);
+
         cardView=findViewById(R.id.google);
         gso=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).
                 requestEmail().build();
         gsc= GoogleSignIn.getClient(this, gso);
+
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -153,7 +156,10 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent=new Intent(getApplicationContext(),Acceuil.class);
         startActivity(intent);
-        finish();
+        // finish();
 
     }
+
+
+
 }
