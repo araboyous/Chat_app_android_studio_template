@@ -10,51 +10,50 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
-
-
+public class Adapnotify extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
     String data1[], data2[];
-    int images[];
     Context context;
 
-    public Adapter(Context ct, String[] s1, String[] s2, int[] img){
+    public Adapnotify(Context ct, String s1[], String s2[]){
         context = ct;
         data1 = s1;
         data2 = s2;
-        this.images = img;
-    }
-    @NonNull
-    @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.publish, parent,false);
-        return new MyViewHolder(view);
+
     }
 
+
+    @NonNull
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public Adapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.notifytemplate, parent,false);
+        return new Adapter.MyViewHolder(view);
+
+    }
+
+
+    @Override
+    public void onBindViewHolder(@NonNull Adapter.MyViewHolder holder, int position) {
         holder.text1.setText(data1[position]);
         holder.text2.setText(data2[position]);
-        holder.imageView.setImageResource(images[position]);
 
     }
 
     @Override
     public int getItemCount() {
-        return images.length;
+        return 0;
     }
-
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         TextView text1, text2;
-        ImageView imageView;
+
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            text1 = itemView.findViewById(R.id.nompub);
-            text2 = itemView.findViewById(R.id.affiche);
-            imageView = itemView.findViewById(R.id.iamy);
+            text1 = itemView.findViewById(R.id.textpub);
+            text2 = itemView.findViewById(R.id.tempub);
+
 
         }
     }

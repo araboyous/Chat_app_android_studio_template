@@ -30,7 +30,7 @@ public class Acceuil extends AppCompatActivity {
         s1= getResources().getStringArray(R.array.produit);
         s2= getResources().getStringArray(R.array.description);
 
-        Adapter myadapter = new Adapter(this, s1, s2, images);
+        Adapter myadapter = new Adapter(this, s1, s2,images);
         recyclerview.setAdapter(myadapter);
         recyclerview.setLayoutManager(new LinearLayoutManager(this));
 

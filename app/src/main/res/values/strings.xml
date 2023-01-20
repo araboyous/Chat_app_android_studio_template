@@ -37,4 +37,28 @@
 
 
     </string-array>
+
+
+    <string-array name="Publication">
+        <item> certification huawei et cisco en cours</item>
+        <item> certification huawei et cisco en cours</item>
+        <item> certification huawei et cisco en cours</item>
+        <item> certification huawei et cisco en cours</item>
+        <item> certification huawei et cisco en cours</item>
+        <item> certification huawei et cisco en cours</item>
+        <item> certification huawei et cisco en cours</item>
+
+    </string-array>
+
+    <string-array name="temps">
+        <item> il y a 1 min</item>
+        <item> il y a 2 min</item>
+        <item> il y a 1 min</item>
+        <item> il y a 1 min</item>
+        <item> il y a 1 min</item>
+        <item> il y a 1 min</item>
+        <item> il y a 1 min</item>
+
+
+    </string-array>
 </resources>
